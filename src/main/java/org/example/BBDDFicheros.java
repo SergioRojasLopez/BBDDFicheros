@@ -82,7 +82,14 @@ public class BBDDFicheros {
                 if (valorClave.equals(unValorClave)) {//Para cada registro, comparamos si unValorClave recuperado del
                     encontrado = true;
                     offsetCampo = 0;
-                    result = new HashMap<String,String>();
+                    result = new HashMap<String, String>();
+                    for (Map.Entry<String, Integer> campo : campos.entrySet()) {
+                        String unCampo = campo.getKey();
+                        int longCampo = campo.getValue();
+                        if (unCampo.equals(this.primaryKey)) {
+                            result.put(campo.getKey(), unValorClave);
+                        }
+                    }
                 }
             }
         } catch (IOException io) {
