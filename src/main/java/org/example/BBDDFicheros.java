@@ -86,9 +86,10 @@ public class BBDDFicheros {
                     for (Map.Entry<String, Integer> campo : campos.entrySet()) {
                         String unCampo = campo.getKey();
                         int longCampo = campo.getValue();
-                        if (unCampo.equals(this.primaryKey)) {
-                            result.put(campo.getKey(), unValorClave);
-                        }
+                        String valorCampo = new String(buffer, offsetCampo, longCampo, StandardCharsets.UTF_8);
+                        result.put(unCampo, valorCampo);
+                        offsetCampo += longCampo;
+
                     }
                 }
             }
@@ -97,4 +98,30 @@ public class BBDDFicheros {
         }
         return result;
     }
+    public long insertar(HashMap<String,String> reg) throws IOException{
+        String valorCampoClave = reg.get(this.primaryKey);
+        if (recuperar(valorCampoClave) != null){//Comprobamos si ya existe un registro con el mismo valor para el campo clave que el queremos insertar (No está permitido)
+            return -1;
+        }
+
+        try(FileOutputStream fos = new FileOutputStream(nombreFichero, true)){
+            for (Map.Entry<String,Integer> campo: campos.entrySet()) {
+                int longCampo = campo.getValue();
+                String valorCampo = reg.get(campo.getKey());
+                if (valorCampo == null){
+                    valorCampo = "";
+                }
+
+                String valorCampoForm = String.format("%1$-" + longCampo + "s", valorCampo); //devuelve el valor del 1er argumento en un String con longitud "longCampo" y alineado a la izquierda (gracias al uso de "-")
+                fos.write(valorCampoForm.getBytes("UTF-8"), 0, longCampo);
+            }
+        }catch (IOException e){
+            System.out.println("Error de E/S: " + e.getMessage());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        this.numRegistro++;
+        return  this.numRegistro-1;
+    }
+
 }
