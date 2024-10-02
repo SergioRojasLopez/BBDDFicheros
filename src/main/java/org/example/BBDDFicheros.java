@@ -101,6 +101,7 @@ public class BBDDFicheros {
     public long insertar(HashMap<String,String> reg) throws IOException{
         String valorCampoClave = reg.get(this.primaryKey);
         if (recuperar(valorCampoClave) != null){//Comprobamos si ya existe un registro con el mismo valor para el campo clave que el queremos insertar (No está permitido)
+            System.err.println("No se puede insertar debido a que ya existe uno con esta clave primaria - " + valorCampoClave);
             return -1;
         }
 
