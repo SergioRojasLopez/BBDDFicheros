@@ -44,13 +44,20 @@ public class Main {
 
             coches.clear();
 
-            coches = (HashMap<String, String>) bbddFicheros.recuperar("2222BBB");
-            for(Map.Entry<String,String> coche : coches.entrySet()){
-                System.out.println(coche.getKey() + ": " + coche.getValue());
-            }
+            mostrarContenido("2222BBB",bbddFicheros);
+            bbddFicheros.modificar("2222BBB","Marca","Fiat");
+            mostrarContenido("2222BBB",bbddFicheros);
+            bbddFicheros.borrar("3333CCC");
+            bbddFicheros.compactar();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
+    }
+    private static  void mostrarContenido (String unValorClave,BBDDFicheros bbddFicheros){
+        HashMap<String,String> coches = (HashMap<String, String>) bbddFicheros.recuperar(unValorClave);
+        for (Map.Entry<String,String> coche : coches.entrySet()){
+            System.out.println(coche.getKey() + ": " + coche.getValue());
+        }
     }
 }

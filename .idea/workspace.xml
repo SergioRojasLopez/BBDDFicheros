@@ -7,6 +7,7 @@
     <list default="true" id="13072001-c206-499e-85a0-ed5e6a5a715f" name="Changes" comment="BBDDFicheros">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BBDDFicheros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BBDDFicheros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
@@ -80,7 +81,9 @@
       <workItem from="1727681587942" duration="19000" />
       <workItem from="1727764013298" duration="20000" />
       <workItem from="1727771212316" duration="2900000" />
-      <workItem from="1727850229911" duration="6459000" />
+      <workItem from="1727850229911" duration="6482000" />
+      <workItem from="1727949356221" duration="76000" />
+      <workItem from="1728039316530" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="BBDDFicheros inicio">
       <option name="closed" value="true" />
@@ -106,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727774124192</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="BBDDFicheros">
+      <option name="closed" value="true" />
+      <created>1727857870789</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727857870789</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,16 +127,5 @@
     <MESSAGE value="BBDDFicheros inicio" />
     <MESSAGE value="BBDDFicheros" />
     <option name="LAST_COMMIT_MESSAGE" value="BBDDFicheros" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/BBDDFicheros.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
