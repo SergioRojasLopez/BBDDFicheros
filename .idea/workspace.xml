@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13072001-c206-499e-85a0-ed5e6a5a715f" name="Changes" comment="BBDDFicheros">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ejemploMarshYUnmarsh/BBDDCoches.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ejemploMarshYUnmarsh/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ejemploMarshYUnmarsh/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BBDDFicheros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BBDDFicheros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +50,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Principal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alumno/IdeaProjects/BBDDFicheros",
+    "last_opened_file_path": "C:/Users/alumno/IdeaProjects/ACT1.2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +65,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alumno\IdeaProjects\BBDDFicheros\src\main\java" />
+      <recent name="C:\Users\alumno\IdeaProjects\BBDDFicheros\src\main" />
+      <recent name="C:\Users\alumno\IdeaProjects\BBDDFicheros\src\main\java\org\example" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +94,11 @@
       <workItem from="1727771212316" duration="2900000" />
       <workItem from="1727850229911" duration="6482000" />
       <workItem from="1727949356221" duration="76000" />
-      <workItem from="1728039316530" duration="4724000" />
+      <workItem from="1728039316530" duration="4970000" />
+      <workItem from="1728376203043" duration="1582000" />
+      <workItem from="1728377981376" duration="1837000" />
+      <workItem from="1728460588029" duration="1580000" />
+      <workItem from="1729249553014" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary="BBDDFicheros inicio">
       <option name="closed" value="true" />
@@ -117,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727857870789</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BBDDFicheros">
+      <option name="closed" value="true" />
+      <created>1728044933122</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728044933122</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
